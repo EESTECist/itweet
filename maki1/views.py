@@ -6,7 +6,7 @@ from .models import Post, Comment
 
 class PostListView(ListView):
     queryset = Post.objects.all()
-    template_name = 'posts/index.html'
+    template_name = 'maki1/index.html'
     context_object_name = 'posts'
 
     def get_context_data(self, *args, **kwargs):
@@ -25,7 +25,7 @@ class PostListView(ListView):
 
 class PostDetailView(DetailView):
     queryset = Post.objects.all()
-    template_name = 'posts/detail.html'
+    template_name = 'maki1/detail.html'
     pk_url_kwarg = 'pk'
 
     def get_context_data(self, *args, **kwargs):

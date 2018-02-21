@@ -1,0 +1,5 @@
+{% for post in posts %}
+  created by - {{post.user.username}} {{post.date_created}} ago <br>
+  {{post.content}}
+  <hr>
+{% endfor %}

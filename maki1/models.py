@@ -13,7 +13,7 @@ class Post(models.Model):
         get_latest_by = 'id'
 
     def __str__(self):
-        return content
+        return self.content
 
     def get_absolute_url(self):
         #return reverse('posts:detail', kwargs={'id': self.id})
@@ -36,7 +36,7 @@ class Comment(models.Model):
         get_latest_by= 'id'
 
     def __str__(self):
-        return content
+        return self.content
 
     def get_absolute_url(self):
         #return reverse('posts:detail', kwargs={'id': self.post.id})
